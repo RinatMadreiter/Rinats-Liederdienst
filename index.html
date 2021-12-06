@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinats Lieferdienst</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="renderPizzas(), renderBasket()" onscroll="scrollBasket()">
+
+    <header>
+        <div class="topbar-container">
+            <div><img class="logowithtext" src="./img/logowithtext2.png"></div>
+            <p class="currentAdress"><u>Berlin Mitte, Berliner Platz, Berlin </u></p>
+            <div>
+                <img class="flag" src="./img/flagge.png">
+                <img onclick="showMenu()" class="navimg" src="./img/menu.png">
+            </div>
+        </div>
+        <div class="mainImg">
+            <img class="pizzarialogo" src="./img/pizzarialogopng.png" alt="Pizzaria Italia Logo">
+        </div>
+        <div class="basketContainer" id="basket">
+            <div>
+                <p class="basketHeading"><b>Warenkorb</b></p>
+                <div class="basketEmpty" id="basketContent">
+                </div>
+            </div>
+            <hr>
+            <div class="sumdiv" id="sum-container">
+                <div class="sumdivsub marginb10px">
+                    <span>
+                        Versandkosten
+                    </span>
+                    <span>
+                        0,00 €
+                    </span>
+                </div>
+                <div class="sumdivsub">
+                    <span>
+                        <b>Gesamtsumme</b>
+                    </span>
+                    <span id="totalSum">
+                        <b>0,00 €</b>
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="buttondiv">
+                <button class="orderbutton" onclick="buy()">
+                    Bestellen
+                </button>
+            </div>
+        </div>
+        
+        <div class="overlay-menu" id="clickMenu">
+            <img src="./img/close.png" class="close-menu-img" onclick="closeMenu()">
+            <a href="#">Menu1</a>
+            <a href="#">Menu1</a>
+            <a href="#">Menu1</a>
+            <a href="#">Menu1</a>
+            <a href="#">Menu1</a>
+        </div> 
+ 
+    </header>
+
+    <main>
+        <div class="food-container">
+            <div class="menucard-container">
+                <h1 class="pizzariaheading1">Pizzaria Italia</h1>
+                <div class="infoheartdiv">
+                    <img src="./img/info.png" alt="information">
+                    <img class="heartimg" src="./img/heart.png" alt="favourite">
+                </div>
+            </div>
+            <div class="ratingdiv">
+                <img class="raingimg" src="./img/ratingo.png" alt="5 Stars-Rating">
+                <span>(6k Bewertungen)</span>
+            </div>
+            <p class="stamp">Bei diesem Restaurant kannst Du Stempel sammeln. Stelle beim
+                Bestellabschluss bitte sicher, dass Du Dich für unseren Newsletter angemeldet hast, um Deine Stempel per
+                E-Mail zu erhalten.</p>
+        </div>
+        <div class="menu-category-bar-container">
+            <img src="./img/search.png" alt="search">
+            <div class="menu-category-bar-subcontainer">
+                <span>Steinofen-Pizza</span>
+                <span>Pasta</span>
+                <span>Antipasti</span>
+                <span>Salate</span>
+                <span>Italienisches Eis</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Desserts</span>
+                <span>Kuchen</span>
+            </div>
+        </div>
+        <div class="listedFoodsection">
+            <div class="pizzasection">
+                <div class="pizzaHeading">
+                    <img src="./img/pizzasection.jpg" alt="pizza">
+                    <h2>Steinofen-Pizza</h2>
+                    <span>Alle unseren Steinofen-Pizzen werden mit frischer Tomatensauce und würzigem Käse
+                        zubereitet.</span>
+                </div>
+                <div class="listedDishesContainer" id="renderedPizzasDiv"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

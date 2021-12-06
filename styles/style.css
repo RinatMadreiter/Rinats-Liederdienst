@@ -1,0 +1,338 @@
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 102, 0);
+    height: 72px;
+}
+
+.flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.logowithtext {
+    height: 28px;
+    padding-left: 15px;
+}
+
+.navimg {
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.currentAdress {
+    margin-right: 50px;
+}
+
+.mainImg {
+    background-image: url('../img/pizzamain.jpg');
+    background-size: cover;
+    height: 200px;
+    background-position: 50%;
+    position: relative;
+    width: calc(100% - 344px);
+}
+
+.basketContainer {
+    position: fixed;
+    width: 344px;
+    bottom: 0;
+    right: 0;
+    top: 72px;
+    text-decoration: #DBDBDB;
+    box-shadow: 1px 0 9px #dbdbdb;
+    background-color: white;
+    z-index: 2;
+}
+
+.basketHeading {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: calc(100% - 344px);
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+.basketEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.basketimg {
+    width: 35px;
+    height: 35px;
+}
+
+hr {
+    border: 1px solid #DBDBDB;
+}
+
+.sumdivsub {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.marginb10px {
+    margin-bottom: 10px;
+}
+
+.orderbutton {
+    cursor: pointer;
+    border-color: #DBDBDB;
+    background-color: #d7d7d7;
+    color: #fff;
+    border-radius: 8px;
+    height: 64px;
+    width: calc(100% - 24px);
+    font-weight: 600;
+    font-size: large;
+    border-style: solid;
+}
+
+.orderbutton:hover {
+    background-color: rgb(248, 102, 0);
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+.sumdiv {
+    margin: 20px 0;
+}
+
+.pizzarialogo {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    bottom: -65px;
+    margin-left: -65px;
+    left: 50%;
+}
+
+.infoheartdiv {
+    padding-right: 24px;
+}
+
+.heartimg {
+    margin-left: 10px;
+}
+
+.menucard-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.menucard-container img {
+    width: 30px;
+    height: auto;
+}
+
+.ratingdiv {
+    display: flex;
+}
+
+.ratingdiv span {
+    font-size: smaller;
+    color: rgb(248, 102, 0);
+    margin-left: 5px;
+}
+
+.raingimg {
+    height: 20px;
+}
+
+.paddingleft24px {
+    padding-left: 24px;
+}
+
+.stamp {
+    font-size: smaller;
+    letter-spacing: 1px;
+    color: grey;
+    font-style: italic;
+}
+
+.menu-category-bar-container img {
+    width: 20px;
+    height: fit-content;
+}
+
+.menu-category-bar-container {
+    background-color: #F8F5F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-category-bar-subcontainer {
+    overflow-x: overlay;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-category-bar-container span {
+    margin: 15px;
+}
+
+.menu-category-bar-subcontainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+.pizzaHeading img {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+}
+
+.pizzaHeading {
+    background-color: #f8f5f2;
+    padding: 19px 16px;
+}
+
+.listedDishes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 15px;
+    position: relative;
+}
+
+.listedDishes:hover {
+    cursor: pointer;
+    background-color: #f9f3f3;
+}
+
+.listedDishesContainer {
+    margin-top: 50px;
+}
+
+
+.d1 {
+    font-size: 18px;
+    color: #0a3847;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.d2 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.d3 {
+    color: #f86600;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.plus {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border: 1px solid #ebebeb;
+}
+
+.plus:hover {
+    cursor: pointer;
+}
+
+.basketItem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.basketItem img {
+    width: auto;
+    height: 18px;
+}
+
+.addremove {
+    border: 1px solid #d8d5d5;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+ 
+.namesBasket {
+    width: 120px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trash {
+    cursor: pointer;
+}
+
+.linesum {
+    width: 60px;
+}
+
+.overlay-menu {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 350px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    border-left: 1px solid black;
+    transform: translateX(501px);
+    transition: all 225ms ease-in-out;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.show-overlay-menu {
+    transform: translateX(0);
+}
+
+.close-menu-img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
